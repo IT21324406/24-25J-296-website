@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software UI Personalization Research</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Merriweather:wght@300;400;500;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="images/icon.png" alt="ReactiveWeb Logo" class="logo-icon">
+                <span>ReactiveWeb</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#project-scope">Project Scope <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#literature-survey">Literature Survey</a></li>
+                        <li><a href="#research-gap">Research Gap</a></li>
+                        <li><a href="#research-problem">Research Problem & Solution</a></li>
+                        <li><a href="#objectives">Research Objectives</a></li>
+                        <li><a href="#methodology">Methodology</a></li>
+                        <li><a href="#technologies">Technologies</a></li>
+                    </ul>
+                </li>
+                <li><a href="#milestones">Milestones</a></li>
+                <li class="dropdown">
+                    <a href="#downloads">Downloads <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#documents-section">Documents</a></li>
+                        <li><a href="#presentations-section">Presentations</a></li>
+                    </ul>
+                </li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Software User Interface Personalization</h1>
+                <h2>Through User Feedback and User Behavior</h2>
+                <a href="#project-scope" class="cta-button">Learn More</a>
+            </div>
+            <div class="hero-illustration">
+                <div class="floating-elements">
+                    <div class="element element-1">
+                        <i class="fas fa-user"></i>
+                        <span>User</span>
+                    </div>
+                    <div class="element element-2">
+                        <i class="fas fa-comments"></i>
+                        <span>Feedback</span>
+                    </div>
+                    <div class="element element-3">
+                        <i class="fas fa-brain"></i>
+                        <span>AI</span>
+                    </div>
+                    <div class="element element-4">
+                        <i class="fas fa-desktop"></i>
+                        <span>UI</span>
+                    </div>
+                </div>
+                <div class="connection-lines"></div>
+                <div class="pulse-circle"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Scope Section -->
+    <section id="project-scope" class="section">
+        <div class="container">
+            <h2 class="section-title">Project Scope</h2>
+            <div class="content-box">
+                <p>This research project focuses on developing an intelligent system for personalizing software user interfaces based on user feedback and behavior analysis. The goal is to enhance user experience by creating adaptive interfaces that evolve with user preferences and usage patterns.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Literature Survey Section -->
+    <section id="literature-survey" class="section">
+        <div class="container">
+            <h2 class="section-title">Literature Survey</h2>
+            <div class="content-box literature-content">
+                <div class="literature-text">
+                    <p class="highlight-text">User Interface (UI) personalization has emerged as a vital research area within Human-Computer Interaction (HCI), especially as the volume of digital content and diversity of user needs continue to grow.</p>
+                    
+                    <div class="literature-grid">
+                        <div class="literature-main">
+                            <p>Traditional static UI designs are no longer sufficient to address cognitive, behavioral, and accessibility demands. Research has demonstrated that adaptive interfaces, particularly those enhanced through Artificial Intelligence (AI), lead to significant improvements in usability, task efficiency, and user engagement [1].</p>
+
+                            <div class="literature-image">
+                                <img src="images/ai.png" alt="AI Technology" class="literature-img">
+                                <p class="image-caption">Figure 1: AI-Powered UI Personalization</p>
+                            </div>
+
+                            <p>Recent advances in abstractive summarization using Large Language Models (LLMs), such as OpenAI's GPT-3.5, have enabled high-context, human-like summary generation, suitable for real-time personalized experiences in browser extensions like ReactiveWeb [3].</p>
+                        </div>
+
+                        <div class="literature-sidebar">
+                            <div class="key-findings">
+                                <h3>Key Findings</h3>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i> 73% favor customized Chrome extension</li>
+                                    <li><i class="fas fa-check-circle"></i> 65% prefer flexible content summaries</li>
+                                    <li><i class="fas fa-check-circle"></i> 80% prefer chatbot-based Q&A</li>
+                                    <li><i class="fas fa-check-circle"></i> 85% benefit from automated accessibility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="literature-features">
+                        <div class="feature-card">
+                            <i class="fas fa-robot"></i>
+                            <h4>AI Integration</h4>
+                            <p>Advanced LLMs for real-time personalization</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-comments"></i>
+                            <h4>Chatbot Support</h4>
+                            <p>Natural language document queries</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-project-diagram"></i>
+                            <h4>Mind Maps</h4>
+                            <p>Visual content comprehension</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-universal-access"></i>
+                            <h4>Accessibility</h4>
+                            <p>Dynamic theme adaptation</p>
+                        </div>
+                    </div>
+
+                    <div class="references">
+                        <h3>References</h3>
+                        <ol>
+                            <li>Liu, J., et al. (2024). Adaptive User Interfaces. ACM Transactions.</li>
+                            <li>SummarizeBot. (2022). AI-Powered Summary Tool.</li>
+                            <li>Brown, T. et al. (2020). Language Models are Few-Shot Learners.</li>
+                            <li>Ghodratnama, A., & Zakershahrak, M. (2023). SumRecom.</li>
+                            <li>Richardson, E., et al. (2021). Automatic Mind Map Generation.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Gap Section -->
+    <section id="research-gap" class="section">
+        <div class="container">
+            <h2 class="section-title">Research Gap</h2>
+            <div class="content-box">
+                <div class="research-gap-grid">
+                    <div class="gap-card">
+                        <div class="gap-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h3>Fragmented Solutions</h3>
+                        <p class="gap-description">Existing tools offer isolated features (summarization, accessibility, chatbots) but lack real-time, integrated personalization.</p>
+                        <div class="gap-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check"></i>
+                                <span>Isolated Features</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-times"></i>
+                                <span>No Real-time Integration</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gap-card">
+                        <div class="gap-icon">
+                            <i class="fas fa-user-cog"></i>
+                        </div>
+                        <h3>Limited Adaptation</h3>
+                        <p class="gap-description">Current systems fail to dynamically adapt to user behavior (scrolling, reading time) or vision needs without manual input.</p>
+                        <div class="gap-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check"></i>
+                                <span>Static Adjustments</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-times"></i>
+                                <span>Manual Configuration Required</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gap-card">
+                        <div class="gap-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Missing Integration</h3>
+                        <p class="gap-description">No unified solution combines AI summarization, contextual chatbots, mind maps, and vision-aware UI adjustments in real time.</p>
+                        <div class="gap-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check"></i>
+                                <span>Individual Tools Available</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-times"></i>
+                                <span>No Unified Platform</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Problem Section -->
+    <section id="research-problem" class="section">
+        <div class="container">
+            <h2 class="section-title">Research Problem & Solution</h2>
+            <div class="content-box">
+                <div class="problem-solution-grid">
+                    <div class="problems-container">
+                        <h3 class="section-subtitle">Proposed Problems</h3>
+                        <div class="problem-cards">
+                            <div class="problem-card">
+                                <div class="problem-icon">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <div class="problem-content">
+                                    <h4>Disjointed AI Tools</h4>
+                                    <p>Existing summarization & chatbots require copy-pasting content, lack contextual awareness, and break user focus.</p>
+                                </div>
+                            </div>
+
+                            <div class="problem-card">
+                                <div class="problem-icon">
+                                    <i class="fas fa-sliders-h"></i>
+                                </div>
+                                <div class="problem-content">
+                                    <h4>Static Personalization</h4>
+                                    <p>Current tools (e.g., Flipboard, BeeLine) don't leverage behavioral signals (scrolling, zooming) for dynamic UI adjustments.</p>
+                                </div>
+                            </div>
+
+                            <div class="problem-card">
+                                <div class="problem-icon">
+                                    <i class="fas fa-universal-access"></i>
+                                </div>
+                                <div class="problem-content">
+                                    <h4>Manual Accessibility</h4>
+                                    <p>Vision-impaired users must repeatedly configure fonts/colors; no AI-driven auto-adaptation exists.</p>
+                                </div>
+                            </div>
+
+                            <div class="problem-card">
+                                <div class="problem-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="problem-content">
+                                    <h4>Fragmented Workflows</h4>
+                                    <p>Users juggle multiple tools for summarization, Q&A, and accessibility—no unified, seamless solution.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="solution-container">
+                        <h3 class="section-subtitle">Proposed Solution</h3>
+                        <div class="solution-card">
+                            <div class="solution-header">
+                                <i class="fas fa-lightbulb"></i>
+                                <h4>ReactiveWeb</h4>
+                            </div>
+                            <p class="solution-description">A Chrome extension unifying AI-powered content summarization, behavior-driven UI adaptation, and vision-aware accessibility for a seamless, inclusive Medium reading experience.</p>
+                            
+                            <div class="solution-features">
+                                <div class="feature">
+                                    <i class="fas fa-robot"></i>
+                                    <span>AI-Powered Summarization</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Behavior-Driven Adaptation</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-eye"></i>
+                                    <span>Vision-Aware Accessibility</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-container">
+                            <h3 class="section-subtitle">Product Demonstration</h3>
+                            <div class="video-wrapper">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objectives Section -->
+    <section id="objectives" class="section">
+        <div class="container">
+            <h2 class="section-title">Research Objectives</h2>
+            <div class="objectives-container">
+                <div class="objectives-timeline">
+                    <div class="timeline-track"></div>
+                    
+                    <div class="objective-node">
+                        <div class="node-content">
+                            <div class="node-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="node-details">
+                                <h3>Intelligent Content Personalization</h3>
+                                <p>Integrate multi-format summarization (points/short/long), contextual Q&A chatbots, and mind maps to enhance comprehension without disrupting reading flow.</p>
+                                <div class="node-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">3</span>
+                                        <span class="stat-label">Formats</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">100%</span>
+                                        <span class="stat-label">Real-time</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">AI</span>
+                                        <span class="stat-label">Powered</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="objective-node">
+                        <div class="node-content">
+                            <div class="node-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="node-details">
+                                <h3>Behavior-Driven UI Adaptation</h3>
+                                <p>Dynamically adjust the interface in real-time based on user interactions (scrolling, zooming) to optimize engagement and reduce cognitive load.</p>
+                                <div class="node-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">24/7</span>
+                                        <span class="stat-label">Monitoring</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">50%</span>
+                                        <span class="stat-label">Faster</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">ML</span>
+                                        <span class="stat-label">Learning</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="objective-node">
+                        <div class="node-content">
+                            <div class="node-icon">
+                                <i class="fas fa-universal-access"></i>
+                            </div>
+                            <div class="node-details">
+                                <h3>Automated Accessibility Enhancement</h3>
+                                <p>Leverage ML to auto-adapt themes (fonts, colors) for vision impairments (e.g., color blindness), minimizing manual setup.</p>
+                                <div class="node-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">100%</span>
+                                        <span class="stat-label">Auto</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">10+</span>
+                                        <span class="stat-label">Themes</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">0</span>
+                                        <span class="stat-label">Setup</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology" class="section">
+        <div class="container">
+            <h2 class="section-title">Methodology</h2>
+            <div class="methodology-container">
+                <div class="methodology-split">
+                    <div class="methodology-text">
+                        <p class="methodology-description">
+                            The methodology adopted in this research follows a multi-tiered, modular development approach aimed at realizing a fully functional and user-personalized Chrome extension, ReactiveWeb designed for the Medium platform. The system integrates content-based personalization, behavior-based real-time UI adaptation, and accessibility-based UI customization for visually impaired users. This was achieved by combining machine learning, artificial intelligence natural language processing (NLP), and real-time frontend state management, supported by a microservice-oriented backend architecture.
+                        </p>
+                        <p class="methodology-description">
+                            Each of the three main functionalities, content summarization (with chatbot and mind map), behavior-driven UI adjustments, and accessibility-focused theming was implemented as a standalone backend service, deployed independently using Microsoft Azure App Services. The frontend, built with React.js, acts as the bridge between user interaction and the three backend services. Communication between components is handled using RESTful APIs.
+                        </p>
+                    </div>
+                    <div class="methodology-image">
+                        <img src="images/system.png" alt="System Architecture" class="system-diagram">
+                        <p class="image-caption">Figure 1: High-Level Architecture of the System</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="section">
+        <div class="container">
+            <h2 class="section-title">Technologies Used</h2>
+            <div class="technologies-grid">
+                <div class="tech-item">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-react"></i>
+                    <span>React</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-brain"></i>
+                    <span>TensorFlow</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-docker"></i>
+                    <span>Docker</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-robot"></i>
+                    <span>OpenAI</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-network-wired"></i>
+                    <span>Keras</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-language"></i>
+                    <span>NLTK</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-calculator"></i>
+                    <span>NumPy</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-database"></i>
+                    <span>FAISS-CPU</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-database"></i>
+                    <span>SQLite</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-docker"></i>
+                    <span>Docker</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-cloud"></i>
+                    <span>Render</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Milestones Section -->
+    <section id="milestones" class="section">
+        <div class="container">
+            <h2 class="section-title">Milestones</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="date">July 2024</div>
+                    <div class="content">
+                        <h3>Project Topic Assessment</h3>
+                        <p>Initial topic assessment document of the proposed research was submitted for evaluation. The submitted document included a brief overview on key aspects of the proposed research along with the research problem, research objectives, overall solution as well as member task breakdown.</p>
+                        <p class="marks">No marks allocated</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">August 2024</div>
+                    <div class="content">
+                        <h3>Project Charter Submission</h3>
+                        <p>Once the topic was finalized, the project charter document was submitted for evaluation. This document also included a brief overview on key aspects of the proposed research along with the research problem, research objectives, overall solution as well as member task breakdown of the proposed research.</p>
+                        <p class="marks">No marks allocated</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">August 2024</div>
+                    <div class="content">
+                        <h3>Project Proposal Presentation</h3>
+                        <p>Presented the proposed research to a panel, covering key concepts, methodology, and expected outcomes.</p>
+                        <p class="marks">Marks Allocation: 6%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">August 2024</div>
+                    <div class="content">
+                        <h3>Project Proposal Report</h3>
+                        <p>The submission of a report which provides an in-depth analysis pertaining to key aspects of the proposed research along with the research problem, objectives, as well as the overall proposed solution.</p>
+                        <p class="marks">Marks Allocation: 6%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">August 2024</div>
+                    <div class="content">
+                        <h3>Status Document 1</h3>
+                        <p>The submission of a document that provides an overview of key tasks conducted by members during the implementation phase of the research.</p>
+                        <p class="marks">Marks Allocation: 1%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">December 2024</div>
+                    <div class="content">
+                        <h3>Progress Presentation 1</h3>
+                        <p>Evaluation of 50% completion of the proposed solution by a panel of judges.</p>
+                        <p class="marks">Marks Allocation: 15%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">February 2025</div>
+                    <div class="content">
+                        <h3>Research Paper Draft Submission</h3>
+                        <p>Submitted a draft version of the research paper to the supervisor for feedback and preliminary evaluation.</p>
+                        <p class="marks">Marks Allocation: 10%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">March 2025</div>
+                    <div class="content">
+                        <h3>Final Thesis Submission</h3>
+                        <p>Submission of the group and individual thesis documents for evaluation.</p>
+                        <p class="marks">Marks Allocation: 19%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">March 2025</div>
+                    <div class="content">
+                        <h3>Progress Presentation 2</h3>
+                        <p>Demonstrated 90% project completion and presented progress to an evaluation panel.</p>
+                        <p class="marks">Marks Allocation: 18%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">May 2025</div>
+                    <div class="content">
+                        <h3>Website Assessment</h3>
+                        <p>Submission of research website for evaluation.</p>
+                        <p class="marks">Marks Allocation: 2%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">May 2025</div>
+                    <div class="content">
+                        <h3>Final Presentation and Viva</h3>
+                        <p>Final evaluation of the completed product (100%).</p>
+                        <p class="marks">Marks Allocation: 20%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloads Section -->
+    <section id="downloads" class="section">
+        <div class="container">
+            <h2 class="section-title">Downloads</h2>
+            
+            <!-- Topic Assessment -->
+            <div id="documents-section" class="download-category">
+                <h3>Topic Assessment</h3>
+                <div class="download-box">
+                    <div class="download-info">
+                        <h4><i class="fas fa-file-pdf"></i> Topic Assessment</h4>
+                        <p class="date">Submitted Date: April 2025</p>
+                        <p class="type">Type: Group</p>
+                    </div>
+                    <a href="documents/24-25J-296 _Approved_TAF.pdf" class="download-link" download="Topic_Assessment.pdf">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project Proposal -->
+            <div class="download-category">
+                <h3>Project Proposal</h3>
+                <div class="download-box">
+                    <div class="download-info">
+                        <h4><i class="fas fa-file-pdf"></i> Proposal Report - IT21324406</h4>
+                        <p class="date">Submitted Date: 23 August 2024</p>
+                        <p class="type">Type: Individual</p>
+                    </div>
+                    <a href="documents/IT21324406_Research_Proposal_Report.pdf" class="download-link" download="Proposal_Report_IT21324406.pdf">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="download-box">
+                    <div class="download-info">
+                        <h4><i class="fas fa-file-pdf"></i> Proposal Report - IT21215360</h4>
+                        <p class="date">Submitted Date: 23 August 2024</p>
+                        <p class="type">Type: Individual</p>
+                    </div>
+                    <a href="documents/IT21215360_Research_Proposal_Report.pdf" class="download-link" download="Proposal_Report_IT21215360.pdf">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="download-box">
+                    <div class="download-info">
+                        <h4><i class="fas fa-file-pdf"></i> Proposal Report - IT17117210</h4>
+                        <p class="date">Submitted Date: 23 August 2024</p>
+                        <p class="type">Type: Individual</p>
+                    </div>
+                    <a href="documents/IT17117210_Research_Proposal_Report.pdf" class="download-link" download="Proposal_Report_IT17117210.pdf">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Final Report -->
+            <div class="download-category">
+                <h3>Final Report</h3>
+                <div class="download-box">
+                    <div class="download-info">
+                        <h4><i class="fas fa-file-pdf"></i> Final Report - Group</h4>
+                        <p class="date">Submitted Date: 27 April 2025</p>
+                        <p class="type">Type: Group</p>
+                    </div>
+                    <a href="documents/24_25J_296_Final Report.pdf" class="download-link" download="Final_Report_Group.pdf">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="download-box">
+                    <div class="download-info">
+                        <h4><i class="fas fa-file-pdf"></i> Final Report - IT21324406</h4>
+                        <p class="date">Submitted Date: 27 April 2025</p>
+                        <p class="type">Type: Individual</p>
+                    </div>
+                    <a href="documents/IT21324406_Final Report.pdf" class="download-link" download="Final_Report_IT21324406.pdf">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="download-box">
+                    <div class="download-info">
+                        <h4><i class="fas fa-file-pdf"></i> Final Report - IT21215360</h4>
+                        <p class="date">Submitted Date: 27 April 2025</p>
+                        <p class="type">Type: Individual</p>
+                    </div>
+                    <a href="documents/IT21215360_Final_Report.pdf" class="download-link" download="Final_Report_IT21215360.pdf">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="download-box">
+                    <div class="download-info">
+                        <h4><i class="fas fa-file-pdf"></i> Final Report - IT17117210</h4>
+                        <p class="date">Submitted Date: 27 April 2025</p>
+                        <p class="type">Type: Individual</p>
+                    </div>
+                    <a href="documents/IT17117210 Final report.pdf" class="download-link" download="Final_Report_IT17117210.pdf">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Research Paper -->
+            <div class="download-category">
+                <h3>Research Paper</h3>
+                <div class="download-box">
+                    <div class="download-info">
+                        <h4><i class="fas fa-file-pdf"></i> Research Paper</h4>
+                        <p class="date">Submitted Date: 18 May 2025</p>
+                        <p class="type">Type: Group</p>
+                    </div>
+                    <a href="documents/24-25J-296_Research Paper.pdf" class="download-link" download="Research_Paper.pdf">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Presentations -->
+            <div id="presentations-section" class="download-category">
+                <h3>Presentations</h3>
+                <div class="download-box">
+                    <div class="download-info">
+                        <h4><i class="fas fa-file-powerpoint"></i> Proposal Presentation</h4>
+                        <p class="date">Submitted Date: 10 August 2024</p>
+                        <p class="type">Type: Group</p>
+                    </div>
+                    <a href="presentations/24-25J-296-Research Project Proposal Presentation.pptx" class="download-link" download="Proposal_Presentation.pptx">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="download-box">
+                    <div class="download-info">
+                        <h4><i class="fas fa-file-powerpoint"></i> Progress Presentation 1</h4>
+                        <p class="date">Submitted Date: 06 December 2024</p>
+                        <p class="type">Type: Group</p>
+                    </div>
+                    <a href="presentations/24-25J-296-Research Progress Presentation 1.pptx" class="download-link" download="Progress_Presentation_1.pptx">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="download-box">
+                    <div class="download-info">
+                        <h4><i class="fas fa-file-powerpoint"></i> Progress Presentation 2</h4>
+                        <p class="date">Submitted Date: 21 March 2025</p>
+                        <p class="type">Type: Group</p>
+                    </div>
+                    <a href="presentations/24-25J-296 _ProgressPresentation2.pptx" class="download-link" download="Progress_Presentation_2.pptx">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="download-box">
+                    <div class="download-info">
+                        <h4><i class="fas fa-file-powerpoint"></i> Final Presentation</h4>
+                        <p class="date">Yet to be submitted, link will be updated soon</p>
+                        <p class="type">Type: Group</p>
+                    </div>
+                    <div class="download-link coming-soon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Research Publication</h3>
+                    <div class="achievement-details">
+                        <p class="journal-name">Journal of Information Systems Engineering and Management</p>
+                        <p class="issn">ISSN: 2468-4376</p>
+                        <p class="paper-title">"SOFTWARE USER INTERFACE PERSONALIZATION THROUGH USER FEEDBACK AND USER BEHAVIOR"</p>
+                    </div>
+                    <div class="achievement-date">2025</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <div class="team-grid">
+                <!-- Supervisors -->
+                <div class="team-card supervisor">
+                    <div class="team-image">
+                        <img src="images/vindhya.jpeg" alt="Vindhya Kalapuge">
+                    </div>
+                    <div class="team-info">
+                        <h3>Ms.Vindhya Kalapuge</h3>
+                        <p class="role">Current Supervisor</p>
+                        <div class="social-links">
+                            <a href="mailto:vindhya.k@sliit.lk"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card supervisor">
+                    <div class="team-image">
+                        <img src="images/thusithanjana.jpeg" alt="Thusithanjana Thilakarthna">
+                    </div>
+                    <div class="team-info">
+                        <h3>Mr. Thusithanjana Thilakarthna</h3>
+                        <p class="role">Previous Supervisor</p>
+                        <div class="social-links">
+                            <a href="mailto:thusithanjana.t@sliit.lk"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card supervisor">
+                    <div class="team-image">
+                        <img src="images/rivoni.jpeg" alt="Rivoni De Zoysa">
+                    </div>
+                    <div class="team-info">
+                        <h3>Ms. Rivoni De Zoysa</h3>
+                        <p class="role">Co-Supervisor</p>
+                        <div class="social-links">
+                            <a href="mailto:rivoni.d@sliit.lk"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Members -->
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/shanoli.jpeg" alt="Shanoli Silva">
+                    </div>
+                    <div class="team-info">
+                        <h3>Silva H.S.N</h3>
+                        <p class="role">Team Member</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/shanoli-silva-4617b9215/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/IT21324406" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="mailto:it21324406@my.sliit.lk"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/maheesha.jpeg" alt="Maheesha Rosa">
+                    </div>
+                    <div class="team-info">
+                        <h3>Rosa M.D</h3>
+                        <p class="role">Team Member</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/maheesha-rosa/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/it21215360" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="mailto:it21215360@my.sliit.lk"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/sandun.jpeg" alt="Sandun Geemal">
+                    </div>
+                    <div class="team-info">
+                        <h3>H.L.Sandun Geemal</h3>
+                        <p class="role">Team Member</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/sandun-geemal/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/sandungeema" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="mailto:it21324406@my.sliit.lk"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info-container">
+                    <div class="contact-image">
+                        <img src="images/chat.jpg" alt="Contact Us" class="contact-img">
+                    </div>
+                    <div class="contact-info-card">
+                        <h3>Get in Touch</h3>
+                        <p>Have questions about our research project? We'd love to hear from you!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:reactiveweb001@gmail.com">reactiveweb001@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Response Time</h4>
+                                    <p>Within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 UI Personalization Research. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
