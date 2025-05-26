@@ -334,11 +334,38 @@ body {
     animation: fadeInLeft 1s ease-out;
 }
 
+/* Medium Badge */
+.medium-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.medium-badge i {
+    color: #00ab6c;
+    font-size: 1.2rem;
+}
+
+.medium-badge span {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Updated Hero Text Styles */
 .hero-text h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     line-height: 1.2;
-    background: linear-gradient(45deg, #fff, #3498db);
+    background: linear-gradient(45deg, #fff, #00ab6c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradient-shift 8s ease infinite;
@@ -347,8 +374,28 @@ body {
 .hero-text h2 {
     font-size: 1.8rem;
     font-weight: 400;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     opacity: 0.9;
+    color: #fff;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero-illustration {
