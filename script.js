@@ -267,7 +267,7 @@ if (contactForm) {
     });
 
     // Form submission with animation
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', async function(e) {
         e.preventDefault();
         
         // Get form data
@@ -284,29 +284,53 @@ if (contactForm) {
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
         submitBtn.disabled = true;
 
-        // Simulate form submission
-        setTimeout(() => {
-            console.log('Form submitted:', formData);
-            
-            // Show success message with animation
-            const successMessage = document.createElement('div');
-            successMessage.className = 'success-message';
-            successMessage.innerHTML = `
-                <i class="fas fa-check-circle"></i>
-                <p>Thank you for your message! We will get back to you soon.</p>
+        try {
+            // Send data to server
+            const response = await fetch('http://localhost:3000/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                // Show success message with animation
+                const successMessage = document.createElement('div');
+                successMessage.className = 'success-message';
+                successMessage.innerHTML = `
+                    <i class="fas fa-check-circle"></i>
+                    <p>Thank you for your message! We will get back to you soon.</p>
+                `;
+                contactForm.appendChild(successMessage);
+                
+                // Reset form
+                contactForm.reset();
+            } else {
+                throw new Error(data.error || 'Something went wrong');
+            }
+        } catch (error) {
+            // Show error message
+            const errorMessage = document.createElement('div');
+            errorMessage.className = 'error-message';
+            errorMessage.innerHTML = `
+                <i class="fas fa-exclamation-circle"></i>
+                <p>${error.message}</p>
             `;
-            contactForm.appendChild(successMessage);
-            
-            // Reset form and button
-            contactForm.reset();
+            contactForm.appendChild(errorMessage);
+        } finally {
+            // Reset button state
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
             
-            // Remove success message after 3 seconds
+            // Remove messages after 3 seconds
             setTimeout(() => {
-                successMessage.remove();
+                const messages = contactForm.querySelectorAll('.success-message, .error-message');
+                messages.forEach(msg => msg.remove());
             }, 3000);
-        }, 1500);
+        }
     });
 }
 
